@@ -3,8 +3,28 @@
     <head>
         <title>Login</title>
         <link rel="icon" href="logo.png" type="imagem/png">
+        <link rel="stylesheet" type="text/css" href="login.css">
+        <script type="text/javascript" scr="login.js"></script>
+   
     </head>
     <body>
+        <div class="c">
         <h2>Login</h2>
+        <form onsubmit="return validateForm()">
+        <div class="fg">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="fg">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="fg">
+            <button type="submit">Login</button>
+        </div>
+        </form>
+    </div>
     </body>
 </html>
